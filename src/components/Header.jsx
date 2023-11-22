@@ -1,4 +1,4 @@
-import start from '../icones/Top-Tweets.png'
+import start from '../icones/Star.png'
 function Header(){
     return(
         <div className='header'>
