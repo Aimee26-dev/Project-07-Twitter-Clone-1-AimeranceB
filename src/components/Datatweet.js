@@ -7,6 +7,7 @@ import Share from '../icones/Share.png'
 import image1 from '../images/image 1.png'
 import tweetimage from '../images/tweet-image.png'
 import tweetphoto from '../images/tweet-photo.png'
+import tweetimage from '../images/Tweet2.png'
 
 export const tweettab = [
     {
@@ -88,25 +89,25 @@ export const tweettab = [
         ]
     },
     {
-        photoprofil:tweetphoto,
+        photoprofil:tweetimage,
         name:"Tweetter",
         iconecertifie:verified,
         mail:"@Tweeter .",
-        temps:"oct 29",
-        text:"BIG NEWS lol jk still Twitter.",
+        temps:"oct 4",
+        text:"hello literally everyone.",
         phototweet:null,
         iconelike:[
             {
                 like:Reply,
-                numberlike:6.8 + 'k'
+                numberlike:118.7 + 'k'
             },
             {
                 like:Retweet,
-                numberlike:36.6 + 'k'
+                numberlike:785.4 + 'k'
             },
             {
                 like:Reactpng,
-                numberlike:267.1 + 'k'
+                numberlike:3.3 + 'm'
             },
             {
                 like:Share
