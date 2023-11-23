@@ -3,7 +3,7 @@ import Button from "./Button";
 function TweetEditorButton(){
     return(
         <div className="tweet-editor-buttons">
-            <Icone />
+            <Icone /> <br />
              <Button />
         </div>
     )
