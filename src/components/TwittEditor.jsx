@@ -1,18 +1,15 @@
-import profile from '../images/profile-photo.png'
+import TweetEditorForm from '../components/TweetEditorForm';
+import TweetEditorButton from './TweetEditorButton';
 
 function TwittEditor(){
     return(
-        <section className='TwittEditor'>
-            <div>
-           <a href="#"><img src={profile} alt="image profile" className='avatar'/></a> 
+        <main className='TwittEditor'>
+            <div className="tweet-editor-form">
+            <TweetEditorForm />
+            <TweetEditorButton />
             </div>
-            <div>
-                <input type="text" placeholder="What's happening" className='tweet-editor-input' />
-            </div>
-            <div>
-                <form action="" className='tweet-editor-form'></form>
-            </div>
-        </section>
+            
+        </main>
     )
 }
 
