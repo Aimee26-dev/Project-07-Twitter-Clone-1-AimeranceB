@@ -9,6 +9,7 @@ function Tweets(){
                     <aside className="tweet-avatar">
                         <img src={element.photoprofil} alt="" />
                     </aside>
+                    
                     <div className="tweet-content">
                         <div className="tweet-body">
                             <h2 className="tweet-title">

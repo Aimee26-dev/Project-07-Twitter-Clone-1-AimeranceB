@@ -4,10 +4,8 @@ import TweetEditorButton from './TweetEditorButton';
 function TwittEditor(){
     return(
         <main className='TwittEditor'>
-            <div className="tweet-editor-form">
             <TweetEditorForm />
             <TweetEditorButton />
-            </div>
             
         </main>
     )

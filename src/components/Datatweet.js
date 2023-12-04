@@ -7,7 +7,7 @@ import Share from '../icones/Share.png'
 import image1 from '../images/image 1.png'
 import tweetimage from '../images/tweet-image.png'
 import tweetphoto from '../images/tweet-photo.png'
-import tweetimage from '../images/Tweet2.png'
+import tweetimg from '../images/Tweet2.png'
 
 export const tweettab = [
     {
@@ -89,7 +89,7 @@ export const tweettab = [
         ]
     },
     {
-        photoprofil:tweetimage,
+        photoprofil:tweetimg,
         name:"Tweetter",
         iconecertifie:verified,
         mail:"@Tweeter .",
