@@ -3,15 +3,16 @@ import Gf from '../icones/Gf.png'
 import Tweet from '../icones/Tweet.png'
 import Emoji from '../icones/Emoji.png'
 import Top from '../icones/Top.png'
+import { NavLink } from 'react-router-dom'
 
 function Icone(){
     return(
         <div className="tweet-editor-actions">
-            <a href="#"><img src={Media} alt="image media" /></a>
-                <a href="#"><img src={Gf} alt="image gf" /></a>
-                <a href="#"><img src={Tweet} alt="image tweet" /></a>
-                <a href="#"><img src={Emoji} alt="image emoji" /></a>
-                <a href="#"><img src={Top} alt="image top" /></a>
+            <NavLink to="/media"><img src={Media} alt="image media" /></NavLink>
+            <NavLink to="/gf"><img src={Gf} alt="image gf" /></NavLink>
+            <NavLink to="/tweet"><img src={Tweet} alt="image tweet" /></NavLink>
+            <NavLink to="/emoji"><img src={Emoji} alt="image emoji" /></NavLink>
+            <NavLink to="/top"><img src={Top} alt="image top" /></NavLink>
         </div>
     )
 }

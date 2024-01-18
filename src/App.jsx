@@ -1,5 +1,5 @@
-import Home from "./pages/home.jsx";
 import Layout from "./components/layout.jsx";
+import Home from "./pages/Home.jsx";
 
 import('./style/reset.css')
 import('./style/App.css')
@@ -8,5 +8,5 @@ export default function App() {
     <Layout>
         <Home/>
     </Layout>
-  )
+  );
 }

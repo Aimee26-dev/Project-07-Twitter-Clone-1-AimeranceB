@@ -1,41 +1,112 @@
-import { tweettab } from "./Datatweet";
+import Tweet from "../components/Tweet.jsx";
+import tweetprofil from '../images/Profile.png'
+import verified from '../icones/Verified.png'
+import Reply from '../icones/Reply.png'
+import Retweet from '../icones/Retweet.png'
+import React from '../icones/React.png'
+import Share from '../icones/Share.png'
+import image1 from '../images/image 1.png'
+import tweetimage from '../images/tweet-image.png'
+import tweetphoto from '../images/tweet-photo.png'
+import tweetimg from '../images/Tweet2.png'
+
+export const tweettab = [
+  {
+      id:1,
+      photoprofil:tweetprofil,
+      name:"CNN",
+      iconecertifie:verified,
+      mail:"@CNN .",
+      temps:"7m",
+      text:"President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+      phototweet:null,
+      Reply:Reply,
+      Retweet:Retweet,
+      React:React,
+      Share:Share,
+      numberReply:57,
+      numberRetweet:144,
+      numberReact:184,
+      },
+  {
+      id:2,
+      photoprofil:image1,
+      name:"The New York Times",
+      iconecertifie:verified,
+      mail:"@nytimes .",
+      temps:"2h",
+      text:" Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
+      phototweet:tweetimage,
+      Reply:Reply,
+      Retweet:Retweet,
+      React:React,
+      Share:Share,
+      numberReply:19,
+      numberRetweet:48,
+      numberReact:482
+      
+  },
+  {
+      id:3,
+      photoprofil:tweetphoto,
+      name:"Tweetter",
+      iconecertifie:verified,
+      mail:"@Tweeter .",
+      temps:"oct 29",
+      text:"BIG NEWS lol jk still Twitter.",
+      phototweet:null,
+      Reply:Reply,
+      Retweet:Retweet,
+      React:React,
+      Share:Share,
+      numberReply:6.8 + 'k',
+      numberRetweet:36.6 + 'k',
+      numberShare:267.1 + 'k',
+  },
+  {
+      id:4,
+      photoprofil:tweetimg,
+      name:"Tweetter",
+      iconecertifie:verified,
+      mail:"@Tweeter .",
+      temps:"oct 4",
+      text:"hello literally everyone.",
+      phototweet:null,
+      Reply:Reply,
+      Retweet:Retweet,
+      React:React,
+      Share:Share,
+      numberReply:118.7 + 'k',
+      numberRetweet:785.4 + 'k',
+      numberShare:3.3 + 'm',
+          }
+      ]
+
+function Tweets() {
 
 
-function Tweets(){
-    return(
-        <div className='tweets'>
-            {tweettab.map((element, index) => (
-                <div key={index} className="tweet">
-                    <aside className="tweet-avatar">
-                        <img src={element.photoprofil} alt="" />
-                    </aside>
-                    
-                    <div className="tweet-content">
-                        <div className="tweet-body">
-                            <h2 className="tweet-title">
-                                <span className="tweet-title-author">{element.name} </span>
-                                <img className="tweet-title-author" src={element.iconecertifie} alt="" />
-                                <span className="tweet-title-details">{element.mail} </span>
-                                <span className="tweet-title-details">{element.temps} </span>
-                            </h2>
-                            <p className="tweet-text">{element.text} </p>
-                            <div className="tweet-image">
-                                <img src={element.phototweet} alt="" />
-                            </div>
-                        </div>
-                        <div className="tweet-actions">
-                            {element.iconelike.map((likes, id) => (
-                                <div className="tweet-action" key={id}>
-                                    <img src={likes.like} alt="" />
-                                    <span>{likes.numberlike} </span>
-                                </div>
-                            ))}
-                        </div>
+  return (
+    <div className='tweets'>
+      {tweettab.map((tweet) => 
+        <Tweet key={tweet.id}
+        photoprofil={tweet.photoprofil}
+        name={tweet.name}
+        iconecertifie = {tweet.iconecertifie}
+        mail = {tweet.mail}
+        temp = {tweet.temps}
+        text = {tweet.text}
+        phototweet = {tweet.phototweet}
+        Reply={tweet.Reply}
+        Retweet={tweet.Retweet}
+        React={tweet.React}
+        Share={tweet.Share}
+        numberReply={tweet.numberReply}
+        numberRetweet={tweet.numberRetweet}
+        numberReact={tweet.numberReact}
 
-                    </div>
-                </div>
-            ))}
-        </div>
-    )
+        />
+      )}
+    </div>
+  )
 }
 export default Tweets;
