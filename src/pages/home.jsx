@@ -23,8 +23,7 @@ function Home() {
            <Trend/> 
         </aside>
         </>
-
-    );
+    )
 }
 
 export default Home;
