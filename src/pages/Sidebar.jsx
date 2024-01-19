@@ -15,70 +15,7 @@ import iconeprivate from '../icones/iconeprivate.png';
 function Sidebar({props}){
   return(
     <div className="sidebar">
-      <ul className="sidebar-navbar">
-      <NavLink to="/Iconetweet">
-          <li>
-            <img src={iconetweet} alt="image" />
-          </li>
-          </NavLink>
-          <NavLink to="/">
-          <li>
-           <img src={imagehometweet} alt="image" />Home
-          </li>
-          </NavLink>
-          <NavLink to="/Explore">
-          <li>
-           <img src={iconeexploretweet} alt="image" />Explore
-          </li>
-          </NavLink>
-          <NavLink to="/Notifications">
-          <li>
-           <img src={iconenotificationtweet} alt="icone" />Notifications
-          </li>
-          </NavLink>
-          <NavLink to="/Messages">
-          <li>
-            <img src={iconemessage} alt="icone" />Messages
-          </li>
-          </NavLink>
-          <NavLink to="/Bookmark">
-          <li>
-           <img src={iconebook} alt="icone" />Bookmarks
-          </li>
-          </NavLink>
-          <NavLink to="/Iconelists">
-          <li>
-           <img src={iconelists} alt="icone" />Lists
-          </li>
-          </NavLink>
-          <NavLink to="/Profil">
-          <li>
-            <img src={iconeprofile} alt="icone" />Profil
-          </li>
-          </NavLink>
-          <NavLink to="/More">
-          <li>
-           <img src={iconemore} alt="icone" />More
-          </li>
-          </NavLink>
-          <div className="sidebar-button"> 
-          <Button/>
-          </div>
-          </ul>
-          
-          <div className="avatar-div">
-            <NavLink to="/Profilphoto"><img src={profilephoto} alt="imageprofil" /></NavLink>
-              <div className="ortizdiv">
-                  <div>
-                  <h3>Bradley Ortiz</h3>
-                  <span>
-                      <img src={iconeprivate} alt="icone private" />
-                  </span>
-                  </div>
-              <span className="namefollow-span" id="@bradley">@bradley ..</span>
-              </div>
-          </div>
-          <Outlet/>
+      
     </div>
   )
 }
