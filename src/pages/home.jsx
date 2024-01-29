@@ -4,7 +4,7 @@ import TweetEditor from '../components/TweetEditor';
 import Tweets from '../components/Tweets';
 import Sidebar from './sidebar';
 import Trend from './Trend'
-
+import Navsidebar from '../components/Navsidebar';
 
 
 
@@ -12,6 +12,7 @@ function Home() {
     return (
         <>
         <aside className="left-sidebar">
+            <Navsidebar/>
         <Sidebar/> 
         </aside>
         <main className="timeline">

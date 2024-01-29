@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
+ import Home from './pages/Home'
 import Iconetweet from './pages/Iconetweet'
 import Explore from './pages/Explore'
 import Notifications from './pages/Notifications'
@@ -11,20 +11,24 @@ import Bookmark from './pages/Bookmark'
 import Profil from './pages/Profil'
 import More from './pages/More'
 import Iconelists from './pages/Iconelist'
-import Sidebar from './pages/sidebar'
+import Navsidebar from './components/Navsidebar'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
 		<Router>
+			<Navsidebar/>
 			<Routes>
-				<Route path="/" element={<Home/>}></Route>
-				{/* <Route path="/iconeexploretweet" element={<Explore/>}></Route> */}
-				{/* <Route path="/iconenotificationtweet" element={<Notifications/>}></Route> */}
-				{/* <Route path="/iconemessage" element={<Messages/>}></Route> */}
-				{/* <Route path="/iconebook" element={<Bookmark/>}></Route> */}
-				{/* <Route path="/iconlists" element={<Iconelists/>}></Route> */}
-				{/* <Route path="/iconeprofile" element={<Profil/>}></Route> */}
-				{/* <Route path="/iconemore" element={<More/>}></Route> */}
+			
+				<Route path="/" element={<App/>}></Route>
+				<Route path="/iconetweet" element={<Iconetweet/>}></Route>
+				<Route path="/imagehometweet" element={<Home/>}></Route>
+				 <Route path="/iconeexploretweet" element={<Explore/>}></Route> 
+				 <Route path="/iconenotificationtweet" element={<Notifications/>}></Route> 
+				 <Route path="/iconemessage" element={<Messages/>}></Route> 
+				 <Route path="/iconebook" element={<Bookmark/>}></Route> 
+				 <Route path="/iconlists" element={<Iconelists/>}></Route> 
+				<Route path="/iconeprofile" element={<Profil/>}></Route> 
+				 <Route path="/iconemore" element={<More/>}></Route> 
 			</Routes>
 		</Router>
 	</React.StrictMode>

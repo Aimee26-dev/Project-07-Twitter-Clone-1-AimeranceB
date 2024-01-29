@@ -62,6 +62,8 @@ export const tweettab = [
       numberReply:6.8 + 'k',
       numberRetweet:36.6 + 'k',
       numberShare:267.1 + 'k',
+      numberReact:482
+
   },
   {
       id:4,
@@ -76,9 +78,11 @@ export const tweettab = [
       Retweet:Retweet,
       React:React,
       Share:Share,
-      numberReply:118.7 + 'k',
-      numberRetweet:785.4 + 'k',
-      numberShare:3.3 + 'm',
+      numberReply:118.7 ,
+      numberRetweet:785.4 ,
+      numberShare:3.3 ,
+      numberReact:482
+
           }
       ]
 

@@ -1,9 +1,9 @@
-import Sidebar from "./sidebar";
+import Navsidebar from "../components/Navsidebar";
 
 function Iconetweet(){
     return(
         <div>
-            <Sidebar/>
+            <Navsidebar/>
         </div>
     )
 }

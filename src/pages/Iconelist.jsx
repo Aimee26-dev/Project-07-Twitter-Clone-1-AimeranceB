@@ -1,9 +1,9 @@
-import Sidebar from "./sidebar";
+import Navsidebar from "../components/Navsidebar";
 
 function Iconelists(){
     return(
         <div>
-            <Sidebar/>
+            <Navsidebar/>
         </div>
     )
 }
