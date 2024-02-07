@@ -8,7 +8,7 @@ import iconelists from '../icones/iconelists.png';
 import iconeprofile from '../icones/iconeprofile.png';
 import iconemore from '../icones/iconemore.png';
 import Button from '../components/Button';
-import { Outlet, Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 
 function Navsidebar(){
     return(
@@ -51,7 +51,6 @@ function Navsidebar(){
                  </li>
                  <div className="sidebar-button">
                   <Button/>
-                  <Outlet/>
                  </div>
             </ul>
           </div>

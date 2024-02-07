@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
  import Home from './pages/Home'
 import Iconetweet from './pages/Iconetweet'
 import Explore from './pages/Explore'
@@ -11,25 +10,64 @@ import Bookmark from './pages/Bookmark'
 import Profil from './pages/Profil'
 import More from './pages/More'
 import Iconelists from './pages/Iconelist'
-import Navsidebar from './components/Navsidebar'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import ContextPage from './components/ContextPage'
 
+const router= createBrowserRouter([
+		{
+			path:"/",
+			element:<App/>
+		},
+
+		{
+			path:"/iconetweet",
+			element:<Iconetweet/>
+		},
+
+		{
+			path:"/home",
+			element:<Home/>
+		},
+
+		{ 
+			path:"/Explore",
+			element:<Explore/>
+		},
+
+		{
+			path:"/Notifications",
+			element:<Notifications/>
+		},
+
+		{
+			path:"/Messages",
+			element:<Messages/>
+		},
+
+		{
+			path:"/Bookmark",
+			element:<Bookmark/>
+		},
+
+		{
+			path:"/Iconelists",
+			element:<Iconelists/>
+		},
+
+		{
+			path:"/Profil",
+			element:<Profil/>
+		},
+
+		{
+			path:"/More",
+			element:<More/>
+		},
+])
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<Router>
-			<Navsidebar/>
-			<Routes>
-			
-				<Route path="/" element={<App/>}></Route>
-				<Route path="/iconetweet" element={<Iconetweet/>}></Route>
-				<Route path="/imagehometweet" element={<Home/>}></Route>
-				 <Route path="/iconeexploretweet" element={<Explore/>}></Route> 
-				 <Route path="/iconenotificationtweet" element={<Notifications/>}></Route> 
-				 <Route path="/iconemessage" element={<Messages/>}></Route> 
-				 <Route path="/iconebook" element={<Bookmark/>}></Route> 
-				 <Route path="/iconlists" element={<Iconelists/>}></Route> 
-				<Route path="/iconeprofile" element={<Profil/>}></Route> 
-				 <Route path="/iconemore" element={<More/>}></Route> 
-			</Routes>
-		</Router>
+			<ContextPage>
+				<RouterProvider router={router}/>
+			</ContextPage>
 	</React.StrictMode>
 )

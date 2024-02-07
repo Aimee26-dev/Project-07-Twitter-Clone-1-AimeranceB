@@ -1,11 +1,13 @@
-import { useState } from "react";
+import {useState } from "react";
+
+
+
 
 function Tweet ({photoprofil,name, iconecertifie, mail, temps,text,phototweet,Reply,Retweet,React,Share,numberReply,numberRetweet,numberReact}) {
   const [count, setCount]= useState(0);
   const [count1, setCount1]= useState(0);
   const [count2, setCount2]= useState(0);
-
-
+ 
   const like=()=>{
     if (count===0){
       setCount(count+1)
@@ -32,7 +34,7 @@ function Tweet ({photoprofil,name, iconecertifie, mail, temps,text,phototweet,Re
   }
     return(
         <div className="tweet">
-            <div className="tweet-avatar">
+           <div className="tweet-avatar">
                 <a href="#"><img src={photoprofil} alt="photo profil"/></a>
             </div>
         <div className="tweet-content">
@@ -72,3 +74,4 @@ function Tweet ({photoprofil,name, iconecertifie, mail, temps,text,phototweet,Re
 }
 
 export default Tweet;
+

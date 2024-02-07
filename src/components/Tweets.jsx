@@ -1,4 +1,4 @@
-import Tweet from "../components/Tweet.jsx";
+import Tweet from "./Tweet.jsx";
 import tweetprofil from '../images/Profile.png'
 import verified from '../icones/Verified.png'
 import Reply from '../icones/Reply.png'
@@ -9,6 +9,7 @@ import image1 from '../images/image 1.png'
 import tweetimage from '../images/tweet-image.png'
 import tweetphoto from '../images/tweet-photo.png'
 import tweetimg from '../images/Tweet2.png'
+
 
 export const tweettab = [
   {
@@ -114,3 +115,4 @@ function Tweets() {
   )
 }
 export default Tweets;
+
