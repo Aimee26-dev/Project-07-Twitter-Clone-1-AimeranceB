@@ -2,7 +2,7 @@ import iconerecherche from '../icones/iconerecherche.png'
 import iconeparametre from '../icones/iconeparametre.png'
 import iconesquid from '../icones/iconesquid.png'
 import { trends } from '../models/Trends';
-import { tweettab } from '../components/Tweets';
+import tweettab from '../models/Data';
 
 
 

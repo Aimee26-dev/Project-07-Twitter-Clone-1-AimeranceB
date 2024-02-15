@@ -5,6 +5,7 @@ import Tweets from '../components/Tweets';
 import Sidebar from './sidebar';
 import Trend from './Trend'
 import Navsidebar from '../components/Navsidebar';
+import Tweetmap from '../components/Tweetmap';
 
 
 
@@ -19,6 +20,7 @@ function Home() {
             <Header />
             <TweetEditor />
             <Tweets />
+            <Tweetmap/>
         </main>
         <aside className="right-sidebar">
            <Trend/> 

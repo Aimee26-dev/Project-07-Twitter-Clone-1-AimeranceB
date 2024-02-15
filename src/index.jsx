@@ -11,7 +11,8 @@ import Profil from './pages/Profil'
 import More from './pages/More'
 import Iconelists from './pages/Iconelist'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import ContextPage from './components/ContextPage'
+import Tweets, { PageContext } from './components/Tweets'
+
 
 const router= createBrowserRouter([
 		{
@@ -66,8 +67,8 @@ const router= createBrowserRouter([
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-			<ContextPage>
+			<Tweets>
 				<RouterProvider router={router}/>
-			</ContextPage>
+			</Tweets>
 	</React.StrictMode>
 )
