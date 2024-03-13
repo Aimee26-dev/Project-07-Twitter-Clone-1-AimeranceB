@@ -431,3 +431,21 @@ width: 350px;
     align-items: center;
     gap: 10px;
 }
+
+.sidebar li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sidebar button{
+    padding: 10px 60px;
+    background-color: #1D9BF0;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+.sidebar ul{
+    position: fixed;
+}

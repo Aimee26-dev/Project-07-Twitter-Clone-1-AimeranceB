@@ -49,7 +49,7 @@ export const tweettab = [
   {
       id:3,
       photoprofil:tweetphoto,
-      name:"Tweetter",
+      name:"Twitter",
       iconecertifie:verified,
       mail:"@Tweeter .",
       temps:"oct 29",
@@ -66,7 +66,7 @@ export const tweettab = [
   {
       id:4,
       photoprofil:tweetimg,
-      name:"Tweetter",
+      name:"Twitter",
       iconecertifie:verified,
       mail:"@Tweeter .",
       temps:"oct 4",
@@ -89,20 +89,7 @@ function Tweets() {
     <div className='tweets'>
       {tweettab.map((tweet) => 
         <Tweet key={tweet.id}
-        photoprofil={tweet.photoprofil}
-        name={tweet.name}
-        iconecertifie = {tweet.iconecertifie}
-        mail = {tweet.mail}
-        temp = {tweet.temps}
-        text = {tweet.text}
-        phototweet = {tweet.phototweet}
-        Reply={tweet.Reply}
-        Retweet={tweet.Retweet}
-        React={tweet.React}
-        Share={tweet.Share}
-        numberReply={tweet.numberReply}
-        numberRetweet={tweet.numberRetweet}
-        numberReact={tweet.numberReact}
+        tweets={tweet}
 
         />
       )}
