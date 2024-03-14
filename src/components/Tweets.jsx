@@ -12,6 +12,7 @@ import tweetimg from '../images/Tweet2.png'
 
 export const tweettab = [
   {
+    userId: 1,
       id:1,
       photoprofil:tweetprofil,
       name:"CNN",
@@ -29,6 +30,7 @@ export const tweettab = [
       numberReact:184,
       },
   {
+    userId: 2,
       id:2,
       photoprofil:image1,
       name:"The New York Times",
@@ -47,6 +49,7 @@ export const tweettab = [
       
   },
   {
+    userId: 3,
       id:3,
       photoprofil:tweetphoto,
       name:"Twitter",
@@ -64,6 +67,7 @@ export const tweettab = [
       numberShare:267.1 + 'k',
   },
   {
+    userId: 3,
       id:4,
       photoprofil:tweetimg,
       name:"Twitter",
